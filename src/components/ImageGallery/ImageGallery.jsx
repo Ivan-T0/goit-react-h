@@ -16,9 +16,9 @@ const STATUS = {
  const ImageGallery=(props)=> {
   const [images, setImages] = useState([]);
   const [page, setPage] = useState(1);
-  const [per_page, setPer_page] = useState(12);
+  const [per_page] = useState(12);
   const [modalImageUrl, setModalImageUrl] = useState('');
-  const [errorMessage, setErrorMessage] = useState(null);
+  const [ , setErrorMessage] = useState(null);
   const [status, setStatus] = useState(STATUS.IDLE);
   const [showModal, setShowModal] = useState(false);
 
